@@ -16,10 +16,10 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-center z-10"
+        className="text-center z-10 bg-black border-2 border-red-500"
       >
-        <h1 className="text-6xl font-bold mb-4">Nayan Aher</h1>
-        <h2 className="text-3xl mb-8">Architect</h2>
+        <h1 className="text-6xl font-bold mb-4">John Doe</h1>
+        <h2 className="text-3xl mb-8">Architect & Artist</h2>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

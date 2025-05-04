@@ -1,8 +1,10 @@
+import Dock from "./components/Dock";
+import { ScrollIndicator } from "./components/ui/scroll-indicator";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const manrope = Manrope({ subsets: ["latin"] });
 export const metadata = {
   title: "Nayan Aher - Architect",
   description:
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={manrope.className}>
+        {/* <ScrollIndicator /> */}
+        <Dock />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 export default function About() {
   return (
@@ -21,16 +21,14 @@ export default function About() {
           className="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed"
         >
           <p className="mb-4">
-            I'm Nayan Aher, an architect with a passion for blending form and
-            function in innovative ways. With the blend of modern vision and
-            strong fundamental knowledge of architecture, I strive to create
-            spaces that inspire and enhance the human experience.
+            I'm John Doe, an architect with a passion for blending form and function in innovative ways. With over a decade of experience in sustainable urban design, I strive to create spaces that inspire and enhance the human experience.
           </p>
-          {/* <p>
+          <p>
             Beyond architecture, I express my creativity through various forms of visual art, exploring the intersection of structure, color, and emotion. My artistic endeavors inform and enrich my architectural practice, resulting in unique, holistic design solutions.
-          </p> */}
+          </p>
         </motion.div>
       </div>
     </section>
-  );
+  )
 }
+
