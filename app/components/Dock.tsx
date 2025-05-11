@@ -37,7 +37,7 @@ export default function NewDock() {
     <TooltipProvider>
       <Dock
         direction="middle"
-        className="bg-transparent border gap-5 shadow-xl shadow-gray-200 bg-white fixed z-50 bottom-10 left-1/2 -translate-x-1/2"
+        className="bg-transparent border lg:gap-5  shadow-xl shadow-gray-200 bg-white fixed z-50 bottom-10 left-1/2 -translate-x-1/2"
       >
         {navItems.map((item) => (
           <DockIcon key={item.name} className="">

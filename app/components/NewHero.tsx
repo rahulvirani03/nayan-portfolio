@@ -10,7 +10,10 @@ export default function NewHero() {
         id="section"
         className="w-full md:w-1/2 lg:w-[45%]  h-1/2 p-2 flex flex-col gap-5 items-center text-center lg:text-left lg:items-start "
       >
-        <div id="avatar" className="h-32 w-32 bg-secondary rounded-full p-1">
+        <div
+          id="avatar"
+          className="h-32 lg:w-32 w-24 bg-secondary rounded-full p-1 border border-gray-300"
+        >
           <div className="h-full w-full bg-gray rounded-full"></div>
         </div>
         <div

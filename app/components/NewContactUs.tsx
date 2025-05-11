@@ -44,7 +44,7 @@ export function NewContactUs() {
   return (
     <div
       id="contact"
-      className=" py-20 px-4 md:px-12 lg:px-24 min-h-screen bg-gradient-to-b from-background to-background/90 text-text-black"
+      className=" md:px-12 lg:px-24 min-h-screen bg-gradient-to-b from-background to-background/90 text-text-black mb-24 lg:mb-0"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -61,78 +61,13 @@ export function NewContactUs() {
         <div className="w-24 h-1 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 mx-auto mt-6"></div>
       </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  value={formState.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Your email"
-                  value={formState.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="subject">Subject</Label>
-              <Input
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                value={formState.subject}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
-              <Textarea
-                id="message"
-                name="message"
-                placeholder="Your message"
-                rows={5}
-                value={formState.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <Button type="submit" className="w-full sm:w-auto group">
-              Send Message
-              <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Button>
-          </form>
-        </motion.div>
-
+      <div className="grid grid-cols-1 lg:grid-cols-2  lg:w-[60%] w-[95%] mx-auto bg-white  rounded-lg  text-white">
         {/* Contact Information */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="space-y-8"
+          className="space-y-8 bg-secondary  text-white p-4  lg:rounded-tl-lg lg:rounded-bl-lg lg:rounded-t-none rounded-t-lg "
         >
           <div>
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
@@ -174,6 +109,76 @@ export function NewContactUs() {
               </div>
             </div>
           </div>
+        </motion.div>
+
+        {/* Contact Form */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-8   text-black p-4 bg-[#f2f2f2]  items-center flex "
+        >
+          <form onSubmit={handleSubmit} className="space-y-6 w-full">
+            <div className="grid grid-cols-1  sm:grid-cols-2 gap-4 bg-[#f2f2f2]">
+              <div className="space-y-2 ">
+                <Label htmlFor="name">Name</Label>
+                <Input
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  value={formState.name}
+                  onChange={handleChange}
+                  required
+                  className="bg-[#f2f2f2]"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Your email"
+                  value={formState.email}
+                  onChange={handleChange}
+                  required
+                  className="bg-[#f2f2f2]"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="subject">Subject</Label>
+              <Input
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                value={formState.subject}
+                onChange={handleChange}
+                required
+                className="bg-[#f2f2f2]"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="message">Message</Label>
+              <Textarea
+                id="message"
+                name="message"
+                placeholder="Your message"
+                rows={5}
+                value={formState.message}
+                onChange={handleChange}
+                required
+                className="bg-[#f2f2f2]"
+              />
+            </div>
+
+            <Button type="submit" className="w-full sm:w-auto group">
+              Send Message
+              <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </form>
         </motion.div>
       </div>
     </div>

@@ -142,6 +142,8 @@ export function ArtWall() {
                   const video = e.currentTarget;
                   video.pause();
                 }}
+                controls={isMobile}
+                preload="auto"
               >
                 <source src={media.src} type="video/mp4" />
               </video>
