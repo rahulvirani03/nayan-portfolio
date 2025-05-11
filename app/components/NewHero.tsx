@@ -12,7 +12,7 @@ export default function NewHero() {
       >
         <div
           id="avatar"
-          className="h-32 lg:w-32 w-24 bg-secondary rounded-full p-1 border border-gray-300"
+          className="w-[10rem] aspect-square bg-secondary rounded-full p-1 border border-gray-300"
         >
           <div className="h-full w-full bg-gray rounded-full"></div>
         </div>
